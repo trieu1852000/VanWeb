@@ -1,14 +1,23 @@
-import React from 'react';
-import { Box, ChakraProvider, Flex, Spacer, Button } from "@chakra-ui/react";
-import Welcome from './Welcome';
-import Navbar from './Navbar';
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Banner } from "./components/Banner";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <ChakraProvider>
-      <Navbar />
-      <Welcome />
-    </ChakraProvider>
+    <div className="App">
+      <NavBar />
+      <Banner />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
