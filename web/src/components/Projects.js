@@ -1,11 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import morganStanley from "../assets/img/ctg.gif"
+import comming from "../assets/img/comming.jpg"
 import fitness from "../assets/img/fit.gif"
+import ecommerce from "../assets/img/ecommerce.gif"
+import tideGuard from "../assets/img/tideGuard.gif"
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import swamHack from "../assets/img/swamhack.gif";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -23,24 +24,24 @@ export const Projects = () => {
       imgUrl: fitness,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Hackabull 2023, Red Tire Scanner",
+      description: "Design & Development a mobile app aimed at predicting red tide occurrences based on environmental factors and historical data.",
+      imgUrl: tideGuard,
+    },
+    {
+      title: "SwamHack 2023, Advanture Roulette",
+      description: "Design & Development an app that takes in the user's location and generates a place that is nearby to allow them to try out and explore possibilities.",
+      imgUrl: swamHack,
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      description: "Design & Development a e-commerce website toy store.",
+      imgUrl: ecommerce,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "It will comming sooon",
+      description: "I'm doing it",
+      imgUrl: comming,
     },
   ];
 
