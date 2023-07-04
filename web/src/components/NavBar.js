@@ -5,7 +5,8 @@ import gitHub from '../assets/img/github.svg';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-import {Download} from 'react-bootstrap-icons'; 
+
+import resume from '../assets/img/myResume.pdf';
 import logo from '../assets/img/logo.png'
 export const NavBar = () => {
 
@@ -51,11 +52,8 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/van-phan-155740248/" target = "_blank" rel ="noopener noreferrer"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/trieu1852000" target = "_blank" rel ="noopener noreferrer"><img src={gitHub} alt="" /></a>
               </div>
-              <a href="/assets/img/myResume.pdf'" download="myResume.pdf">
-                  <button className="vvd">
-                    <span> My Resume <Download size={20}/></span>
-                  </button>
-              </a>
+              <a href={resume} download="VanResume" target='_blank'>
+                <button >Download Resume!</button></a>
             </span>
           </Navbar.Collapse>
         </Container>
